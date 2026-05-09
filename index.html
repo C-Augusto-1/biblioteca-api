@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biblioteca Virtual</title>
+
+    <meta name="description"
+        content="Sistema de busca de livros utilizando a Open Library API">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon"
+        href="https://cdn-icons-png.flaticon.com/512/2232/2232688.png">
+
+</head>
+
+<body>
+
+    <header class="topo">
+
+        <div class="overlay"></div>
+
+        <div class="hero">
+
+            <h1>
+                📚 Biblioteca Virtual
+            </h1>
+
+            <p>
+                Pesquise livros e os autores 
+            </p>
+
+            <div class="pesquisa">
+
+                <input
+                    type="text"
+                    id="livro"
+                    placeholder="Digite o nome do livro..."
+                    autocomplete="off"
+                >
+
+                <button onclick="buscarLivros()">
+                    🔍 Buscar
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="conteudo">
+
+        <section class="info-api">
+
+            <div class="info-card">
+
+              
+
+            </div>
+
+            <div class="info-card">
+
+
+            <h2 class="titulo-resultados">
+                Resultados da Busca
+            </h2>
+
+            <div id="resultado"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
